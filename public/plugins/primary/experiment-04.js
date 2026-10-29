@@ -1,0 +1,6 @@
+/* Primary experiment 05, independently editable */
+(function(){'use strict';
+const {label,axes,bar,extraDraw}=window.PLAB_PRIMARY_DRAWING;
+const experiment={name:'方位与地图',title:'英语路线与方格地图',description:'将向东和向北的步数设置为变量，用坐标和英文方向描述终点。',params:[['East (格)',0,8,4,1],['North (格)',0,8,3,1]],calc:p=>({text:`East ${p[0]} blocks, North ${p[1]} blocks；共走 ${p[0]+p[1]} 格（沿网格路线）`,limit:'这里只计算先向东再向北的网格路径长度，不是直线距离。',links:['map','directions','geometry','measurement']}),draw:(ctx,W,H,p)=>{const sz=Math.min((W-90)/8,(H-80)/8),ox=45,oy=H-45;ctx.strokeStyle='#34495e';for(let i=0;i<=8;i++){ctx.beginPath();ctx.moveTo(ox+i*sz,oy);ctx.lineTo(ox+i*sz,oy-8*sz);ctx.moveTo(ox,oy-i*sz);ctx.lineTo(ox+8*sz,oy-i*sz);ctx.stroke()}ctx.strokeStyle='#63dec1';ctx.lineWidth=5;ctx.beginPath();ctx.moveTo(ox,oy);ctx.lineTo(ox+p[0]*sz,oy);ctx.lineTo(ox+p[0]*sz,oy-p[1]*sz);ctx.stroke();ctx.fillStyle='#fff';ctx.beginPath();ctx.arc(ox+p[0]*sz,oy-p[1]*sz,7,0,Math.PI*2);ctx.fill()}};
+window.PLAB_EXPERIMENT_PLUGINS.register({id:'primary.builtin.4',level:'primary',version:'1.0.0',name:experiment.name,kind:'primary',definition:experiment,run:({parameters,canvas,width,height})=>{const result=experiment.calc(parameters);if(canvas&&experiment.draw)experiment.draw(canvas.getContext('2d'),width,height,parameters);return result;}});
+})();

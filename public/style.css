@@ -1,0 +1,113 @@
+:root{color-scheme:dark;--bg:#090e19;--card:#121d2e;--line:#28364b;--text:#e6edf7;--muted:#9cacc1;--accent:#54d6be}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 15% -10%,#19344a 0,transparent 45%),var(--bg);color:var(--text);font:15px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:inherit;text-decoration:none}button,input,select{font:inherit}button{cursor:pointer}.landing{max-width:1120px;margin:0 auto;padding:9vh 25px 40px}.brand,.eyebrow,.kicker{letter-spacing:.17em;font-size:12px;color:var(--accent);font-weight:700}.landing h1{font-size:clamp(38px,6vw,72px);line-height:1.14;margin:38px 0 22px;letter-spacing:-.035em}.landing h1 span{color:var(--accent)}.landing>p{max-width:670px;color:var(--muted);font-size:18px}.choices{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:58px 0 42px}.choice,.panel{background:linear-gradient(160deg,#18283b,#101827);border:1px solid var(--line);border-radius:20px;padding:28px}.choice:hover{border-color:var(--accent);transform:translateY(-2px)}.choice{transition:.18s}.choice h2{font-size:29px;margin:12px 0}.choice p{color:var(--muted);min-height:95px}.choice strong{color:var(--accent)}.choice.purple{--accent:#b5a2ff}.landing footer{color:var(--muted);font-size:12px}.app{max-width:1440px;margin:auto;padding:18px 24px 48px}.top{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding:0 0 17px}.top a{color:var(--muted)}.top a:hover{color:white}.top h1{margin:3px 0;font-size:25px}.nav{display:flex;gap:10px;flex-wrap:wrap}.nav a,.pill{border:1px solid var(--line);border-radius:24px;padding:7px 15px;background:#162235}.nav a.active{border-color:var(--accent);color:var(--accent)}.intro{margin:26px 0;color:var(--muted)}.toolbar{display:flex;gap:9px;flex-wrap:wrap;margin:18px 0}.toolbar button{border-radius:24px;border:1px solid var(--line);color:var(--muted);background:#111e2f;padding:7px 16px}.toolbar button.active{background:#164439;color:#92ffe3;border-color:#32917a}.layout{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(310px,.75fr);gap:18px}.panel{padding:21px}.panel h2{margin:0 0 12px;font-size:19px}.panel h3{font-size:16px;margin:15px 0 8px}.muted,.small{color:var(--muted)}.small{font-size:13px}.network{min-height:520px;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 45%,#162b38,#0e1827 78%);border-radius:14px;border:1px solid #22324b}.network svg{width:100%;height:520px;display:block;touch-action:manipulation}.node{cursor:pointer;outline:0}.node circle{stroke:#567087;stroke-width:1.5;transition:.15s}.node text{fill:#eaf3ff;font-size:11px;text-anchor:middle;pointer-events:none}.node.dim{opacity:.15}.node.selected circle{stroke:white;stroke-width:3}.node.linked circle{stroke:#84edd8;stroke-width:2.5}.edge{stroke:#57718d;stroke-width:1.2;opacity:.38}.edge.highlight{stroke:#69efd1;stroke-width:2.5;opacity:1}.legend{display:flex;flex-wrap:wrap;gap:12px;margin:12px 0 0}.legend span{font-size:12px;color:var(--muted)}.dot{display:inline-block;width:9px;height:9px;border-radius:99px;margin-right:5px}.info{min-height:280px}.formula{font-family:ui-monospace,Menlo,monospace;color:#74e8d4;background:#0a1521;border-radius:10px;padding:10px;overflow-wrap:anywhere}.related{display:flex;flex-wrap:wrap;gap:7px}.related button{background:#1c3044;color:#e5efff;border:1px solid #334c64;border-radius:20px;padding:5px 10px}.experiment{margin-top:20px}.experiment-wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(290px,.62fr);gap:18px}.chart{background:#0b1725;border:1px solid #24364c;border-radius:12px;width:100%;height:320px;display:block}.controls{display:grid;gap:12px}.control{display:grid;grid-template-columns:68px 1fr 46px;align-items:center;gap:10px}.control input{width:100%;accent-color:#5fdfbf}.callout{border-left:3px solid var(--accent);padding:9px 14px;background:#122e30;border-radius:4px;color:#bcefe3}.foot{margin:24px 0;color:var(--muted);font-size:12px}.c_math{fill:#277c79}.c_physics{fill:#3d70a8}.c_chemistry{fill:#95682e}.c_biology{fill:#397d47}.c_geography{fill:#6462a2}.c_history{fill:#936255}.c_computer{fill:#87509b}.c_economics{fill:#907e2f}.search{background:#0c1826;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:8px 12px;width:min(100%,300px)}@media(max-width:850px){.layout,.experiment-wrap,.choices{grid-template-columns:1fr}.network,.network svg{height:460px;min-height:460px}.app{padding:15px}.choice p{min-height:0}}
+
+.branch-box{margin-top:24px;border-top:1px solid var(--line);padding-top:12px}.branch-topic-list{display:grid;gap:7px}.branch-topic{display:flex;justify-content:space-between;align-items:center;text-align:left;gap:12px;width:100%;background:#18283b;color:#e5efff;border:1px solid #39536a;border-radius:9px;padding:10px 12px}.branch-topic.open{border-color:#54d6be;background:#153c40}.branch-topic-detail{padding:13px;background:#0d1a2a;border:1px solid #263e52;border-radius:9px}.branch-topic-detail p{margin:4px 0 10px}.branch-prompt{margin-top:20px;padding:15px;background:#122638;border-radius:12px}.branch-generate,.branch-actions button{background:#1a665e;border:1px solid #54d6be;color:white;border-radius:9px;padding:9px 14px}.branch-prompt label{display:block;margin:12px 0 6px}.branch-prompt textarea{width:100%;min-height:240px;resize:vertical;background:#071320;color:#e6edf7;border:1px solid #456077;border-radius:9px;padding:10px;font:13px/1.55 ui-monospace,monospace}.branch-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:8px}.branch-actions span{font-size:12px;color:#a9ead8}
+
+/* 三栏知识浏览器：左专题 / 中网络 / 右摘要与提示词 */
+.layout{grid-template-columns:minmax(220px,.86fr) minmax(390px,1.75fr) minmax(260px,1fr);align-items:start;gap:14px}
+.layout>.panel{min-width:0;padding:16px}.branch-side,.info{max-height:calc(100vh - 100px);overflow-y:auto;position:sticky;top:14px;scrollbar-width:thin}
+.network{min-height:440px}.network svg{height:auto;aspect-ratio:800/520}.branch-box{margin-top:0;border:0;padding:0}
+.branch-prompt{margin-top:0}.branch-prompt textarea{min-height:160px}.example-link{display:inline-block;text-decoration:none;margin:8px 6px 8px 0}
+.branch-topic-detail{overflow-wrap:anywhere}.branch-topic{font-size:13px}.branch-topic span{min-width:0}
+body:not([data-lab="yes"]) #embeddedExperiment{display:none}
+body[data-lab="yes"] .layout,body[data-lab="yes"] .toolbar{display:none}
+body[data-lab="yes"] #embeddedExperiment{display:block;margin-top:30px}
+@media(max-width:1200px){.layout{grid-template-columns:minmax(190px,.8fr) minmax(310px,1.5fr) minmax(235px,1fr)}.layout>.panel{padding:12px}}
+@media(max-width:820px){.layout{grid-template-columns:1fr}.branch-side,.info{position:static;max-height:none}.graph-main{order:0}.branch-side{order:1}.info{order:2}}
+
+/* 左侧目录下方的提示词卡片 */
+.branch-side .branch-prompt{margin-top:18px;border:1px solid #285665}.branch-side .branch-prompt textarea{min-height:160px}
+
+
+.learn-dep-flow{background:#0c2631;border:1px solid #265866;border-radius:10px;padding:12px;text-align:center}.learn-dep-flow .learn-tags{justify-content:center}.learn-arrow{display:block;color:#65d6ba;padding:7px 0;font-size:12px}.learn-dep-flow strong{display:inline-block;border:1px solid #58bba8;border-radius:8px;padding:5px 12px}
+
+/* 总首页：三个学段纵向叠放，适配手机与桌面 */
+.landing .choices{display:grid;grid-template-columns:minmax(0,1fr);gap:18px;margin:38px 0 36px}
+.landing .choice{display:block;width:100%;padding:26px 30px}
+.landing .choice p{min-height:0;margin:8px 0 14px;max-width:900px}
+.landing .choice h2{margin:9px 0;font-size:27px}
+.landing{max-width:1040px}
+@media(max-width:640px){.landing .choice{padding:22px}.landing .choice h2{font-size:23px}}
+
+.plab-depth{margin:10px 0;color:inherit}.plab-depth select{padding:5px 9px;border-radius:7px;background:#243747;color:white;margin-left:8px}.plab-config-labs{margin:20px auto;padding:20px;max-width:1160px}.plab-config-labs select,.plab-config-labs input{padding:7px;border-radius:7px}.plab-config-labs #configLabControls{display:flex;flex-wrap:wrap}.plab-config-labs p{line-height:1.7}
+/* Unified page header across the three education levels */
+.plab-unified-header{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}.plab-unified-header .nav{display:flex;flex-wrap:wrap;gap:8px}.plab-unified-header .nav a{padding:7px 12px;border-radius:12px}.plab-unified-header .nav .active{font-weight:700}
+
+/* Unified vertical knowledge workflow, used by all three education levels */
+.plab-learning-stack{display:flex;flex-direction:column;gap:20px;max-width:1460px;margin:20px auto;padding:0 16px 32px;min-width:0}
+.plab-learning-section{display:block;min-width:0;padding:18px;border:1px solid #34506b55;border-radius:16px;background:rgba(130,154,183,.055)}
+.plab-learning-section>h2{font-size:1.22rem;margin:0 0 16px}
+.plab-learning-section .graph-main,.plab-learning-section .primary-graph{width:100%;max-width:none;min-width:0;box-sizing:border-box}
+.plab-learning-section .plab-branch-columns{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+.plab-learning-section .plab-branch-columns>*{min-width:0;max-width:none;width:auto;box-sizing:border-box}
+.plab-learning-section .related{display:flex;flex-wrap:wrap;gap:8px}
+.plab-learning-section .branch-prompt,.plab-learning-section .math-summary-tool{width:100%;max-width:100%}
+.plab-learning-section textarea{width:100%;max-width:100%;box-sizing:border-box}
+.plab-learning-section .primary-section,.plab-learning-section .experiment{margin:0;max-width:none;width:100%}
+.plab-learning-section .primary-graph svg,.plab-learning-section .graph-main svg{max-width:100%}
+@media(max-width:760px){.plab-learning-section .plab-branch-columns{grid-template-columns:1fr}.plab-learning-stack{padding:0 8px}.plab-learning-section{padding:12px}}
+
+/* Fixed, matching branch/concept card heights across primary, junior, senior. */
+.plab-branch-section .plab-branch-columns{align-items:stretch}
+.plab-branch-section .plab-branch-columns > #primaryBranchSidebar,
+.plab-branch-section .plab-branch-columns > #primaryDetail,
+.plab-branch-section .plab-branch-columns > #branchSidebar,
+.plab-branch-section .plab-branch-columns > #info{
+  height:440px;min-height:440px;max-height:440px;overflow-y:auto;overflow-x:hidden;
+  position:static;top:auto;overscroll-behavior:contain;scrollbar-width:thin;
+  -webkit-overflow-scrolling:touch;
+}
+/* Intentionally blank touch-safe strip above the learning layout. */
+.plab-touch-scroll-zone{
+  height:76px;min-height:76px;width:100%;flex:none;
+  background:transparent;touch-action:pan-y;user-select:none;
+  -webkit-user-select:none;overscroll-behavior:auto;
+}
+@media(max-width:760px){
+  .plab-branch-section .plab-branch-columns > #primaryBranchSidebar,
+  .plab-branch-section .plab-branch-columns > #primaryDetail,
+  .plab-branch-section .plab-branch-columns > #branchSidebar,
+  .plab-branch-section .plab-branch-columns > #info{height:360px;min-height:360px;max-height:360px;}
+  .plab-touch-scroll-zone{height:92px;min-height:92px;}
+}
+
+/* Compact primary graph heading after removing LEVEL overview. Keep gesture strip usable. */
+body[data-level="primary"] .plab-learning-stack{margin-top:4px;gap:14px}
+body[data-level="primary"] .plab-touch-scroll-zone{height:42px;min-height:42px}
+body[data-level="primary"] .plab-node-section{padding-top:12px}
+body[data-level="primary"] .plab-node-section>h2{margin-bottom:8px}
+body[data-level="primary"] .plab-node-section .primary-toolbar{margin-bottom:8px}
+@media(max-width:760px){body[data-level="primary"] .plab-touch-scroll-zone{height:56px;min-height:56px}}
+
+/* Match junior and senior heading-to-graph spacing to the compact primary view. */
+body[data-level="junior"] .plab-learning-stack,
+body[data-level="senior"] .plab-learning-stack{margin-top:4px;gap:14px}
+body[data-level="junior"] .plab-touch-scroll-zone,
+body[data-level="senior"] .plab-touch-scroll-zone{height:42px;min-height:42px}
+body[data-level="junior"] .plab-node-section,
+body[data-level="senior"] .plab-node-section{padding-top:12px}
+body[data-level="junior"] .plab-node-section>h2,
+body[data-level="senior"] .plab-node-section>h2{margin-bottom:8px}
+body[data-level="junior"] .plab-node-section .toolbar,
+body[data-level="senior"] .plab-node-section .toolbar{margin-top:0;margin-bottom:8px}
+@media(max-width:760px){
+ body[data-level="junior"] .plab-touch-scroll-zone,
+ body[data-level="senior"] .plab-touch-scroll-zone{height:56px;min-height:56px}
+}
+
+/* Common three-stage learning instruction and centralized verification tools. */
+.plab-workflow-hint{margin:0;padding:8px 12px;font-size:14px;line-height:1.5;color:inherit;background:rgba(130,154,183,.07);border-left:3px solid #628fb1;border-radius:5px}
+.plab-experiment-verification{display:flex;flex-direction:column;gap:10px;margin-bottom:12px}
+.plab-experiment-verification .plab-verification{border:1px solid rgba(130,154,183,.25);border-radius:10px;padding:12px;max-width:100%;box-sizing:border-box}
+.plab-experiment-verification .plab-verification p{overflow-wrap:anywhere}
+.plab-experiment-verification .plab-verification-empty{opacity:.7;font-size:14px}
+/* Standalone interactive model pages. Hidden knowledge sections remain mounted for legacy JS initialization. */
+body[data-lab="yes"] .plab-learning-stack > :not(.plab-experiments-section):not(.plab-session-summary),
+body[data-primary-lab="yes"] .plab-learning-stack > :not(.plab-experiments-section):not(.plab-session-summary) {display:none!important;}
+body[data-lab="yes"] .plab-experiment-verification,
+body[data-primary-lab="yes"] .plab-experiment-verification {display:none!important;}
+body[data-lab="yes"] .plab-experiments-section > h2,
+body[data-primary-lab="yes"] .plab-experiments-section > h2 {font-size:1.3rem;}
+.plab-session-summary{margin:16px 0;padding:20px;border:1px solid #4b6277;border-radius:12px;background:rgba(65,85,103,.12)}
+.plab-session-summary textarea{display:block;box-sizing:border-box;width:100%;min-height:190px;margin:12px 0;padding:12px;resize:vertical;font:inherit;line-height:1.55;color:inherit;background:transparent;border:1px solid #708295;border-radius:8px}
+.plab-session-summary button{padding:9px 15px;cursor:pointer}
+.plab-session-summary [role=status]{margin-left:12px}
